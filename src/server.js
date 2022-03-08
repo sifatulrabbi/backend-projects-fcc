@@ -17,12 +17,17 @@ app.get("/", (_req, res) => {
  * @param {string | number| undefined} date
  */
 function service(date) {
-  let unix, utc;
+  let unix, utc, d;
   if (date) {
-    let d = new Date(date);
+    d = new Date(date);
     if (!d.getTime()) d = new Date(parseInt(date, 10));
+    if (!d.getTime()) return { error: "Invalid Date" };
     utc = d.toUTCString();
     unix = d.getTime();
+  } else {
+    d = new Date();
+    unix = d.getTime();
+    utc = d.toUTCString();
   }
   return { unix, utc };
 }
