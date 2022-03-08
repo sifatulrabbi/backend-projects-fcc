@@ -6,3 +6,4 @@ Digital clock app with JavaScript, HTML, CSS
 
 - Add alarm
 - Alarm will notify you via email
+- Get a timestamp of the given date/current time
