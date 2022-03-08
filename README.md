@@ -1,9 +1,9 @@
-# Digital clock
+# Backend project for FreeCodeCamp.org
 
-Digital clock app with JavaScript, HTML, CSS
+This repository contains all the backend projects fro FreeCodeCamp.org backend developer certificate
 
-## Features
+```bash
+yarn workspace <name> add <package-name>
 
-- Add alarm
-- Alarm will notify you via email
-- Get a timestamp of the given date/current time
+yarn workspace <name> start || start:dev
+```

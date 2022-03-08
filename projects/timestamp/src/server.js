@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({ optionsSuccessStatus: 200 }));
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 app.get("/", (_req, res) => {
   res.status(200).sendFile(__dirname + "/views/index.html");

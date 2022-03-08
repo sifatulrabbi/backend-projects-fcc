@@ -1,22 +1,20 @@
 {
-  "name": "digital_clock",
+  "name": "backend-projects-fcc",
   "version": "1.0.0",
-  "description": "Get timestamps",
-  "main": "./src/server.js",
+  "description": "Backend Projects for FreeCodeCamp.org backend developer certificate",
   "repository": "git@github.com:sifatulrabbi/digital_clock.git",
   "author": "Md Sifatul Islam Rabbi <mdsifatulislam.rabbi@gmail.com>",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "start": "node ./src/server.js",
-    "start:dev": "nodemon ./src/server.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+  "workspaces": [
+    "./projects/*"
+  ],
+  "keywords": [
+    "freecodecamp",
+    "node",
+    "javascript",
+    "express",
+    "mongodb",
+    "mongoose"
+  ]
 }
