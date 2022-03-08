@@ -32,8 +32,9 @@ function service(date) {
   return { unix, utc };
 }
 
-app.get("/api/hello", function (_req, res) {
-  res.json({ greeting: "hello API" });
+app.get("/api/", function (_req, res) {
+  const timestamp = service();
+  res.status(200).json(timestamp);
 });
 
 app.get("/api/:date", (req, res) => {
